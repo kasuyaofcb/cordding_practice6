@@ -713,6 +713,7 @@ footer {
     width: 800px;
     display: flex;
     justify-content: left;
+    margin-right: 40px;
 
     .item_content_left {
       margin-left: 40px;
@@ -917,5 +918,32 @@ footer {
 
   footer {
     flex-direction: column;
+  }
+
+  /* ======================item1_top====================== */
+  .item_content {
+    .item_content_box {
+      flex-direction: column;
+      width: 100%;
+      padding-right: 40px;
+      padding-left: 40px;
+      .item_content_left {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+
+        img {
+          box-sizing: border-box;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .item_content_right {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding-left: 0;
+      }
+    }
   }
 }
