@@ -787,7 +787,7 @@ footer {
 /* ============================================ */
 /* ======================about_top====================== */
 #about_top {
-  width: 600px;
+  max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
   font-size: 14px;
@@ -804,7 +804,7 @@ footer {
 /* ============================================ */
 /* ======================company_top====================== */
 #company_top {
-  width: 600px;
+  max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
   font-size: 14px;
@@ -841,7 +841,7 @@ footer {
 @media screen and (max-width: 900px) {
   /* ======================header 900px======================= */
   header {
-    max-width: 900px;
+    width: 100%;
   }
 
   /* ======================main 900px====================== */
@@ -861,7 +861,52 @@ footer {
             height: auto;
           }
         }
+        dd {
+          box-sizing: inherit;
+          width: 100%;
+          height: auto;
+          margin-top: inherit;
+        }
       }
     }
+  }
+
+  /* ======================about_top 900px====================== */
+  #about_top {
+    max-width: 600px;
+    p {
+      box-sizing: inherit;
+    }
+    #about_content {
+      width: 100%;
+      height: auto;
+      overflow-wrap: normal;
+      p {
+        box-sizing: inherit;
+        width: 100%;
+        word-break: break-all;
+      }
+    }
+  }
+
+  /* ======================company_top 900px====================== */
+  #company_top {
+    max-width: 600px;
+  }
+  #company_content {
+    max-width: 600px;
+    height: auto;
+    overflow-wrap: normal;
+    ul {
+      width: unset !important;
+      dl {
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+  }
+
+  iframe {
+    width: 100%;
   }
 }

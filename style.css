@@ -805,7 +805,7 @@ footer p {
 /* ============================================ */
 /* ======================about_top====================== */
 #about_top {
-  width: 600px;
+  max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
   font-size: 14px;
@@ -824,7 +824,7 @@ footer p {
 /* ============================================ */
 /* ======================company_top====================== */
 #company_top {
-  width: 600px;
+  max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
   font-size: 14px;
@@ -871,7 +871,7 @@ footer p {
 @media screen and (max-width: 900px) {
   /* ======================header 900px======================= */
   header {
-    max-width: 900px;
+    width: 100%;
   }
   /* ======================main 900px====================== */
   main {
@@ -892,6 +892,54 @@ footer p {
             box-sizing: inherit;
     width: 100%;
     height: auto;
+  }
+  main ul dl dd {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    width: 100%;
+    height: auto;
+    margin-top: inherit;
+  }
+  /* ======================about_top 900px====================== */
+  #about_top {
+    max-width: 600px;
+  }
+  #about_top p {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  #about_top #about_content {
+    width: 100%;
+    height: auto;
+    overflow-wrap: normal;
+  }
+  #about_top #about_content p {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    width: 100%;
+    word-break: break-all;
+  }
+  /* ======================company_top 900px====================== */
+  #company_top {
+    max-width: 600px;
+  }
+  #company_content {
+    max-width: 600px;
+    height: auto;
+    overflow-wrap: normal;
+  }
+  #company_content ul {
+    width: unset !important;
+  }
+  #company_content ul dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
