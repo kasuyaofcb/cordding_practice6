@@ -790,6 +790,7 @@ footer {
   max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
+  margin-right: 40px;
   font-size: 14px;
   #about_content {
     margin-top: 30px;
@@ -807,6 +808,7 @@ footer {
   max-width: 600px;
   margin-top: 140px;
   margin-left: 40px;
+  margin-right: 40px;
   font-size: 14px;
   #company_content {
     margin-top: 30px;
@@ -874,6 +876,7 @@ footer {
   /* ======================about_top 900px====================== */
   #about_top {
     max-width: 600px;
+
     p {
       box-sizing: inherit;
     }
@@ -908,5 +911,11 @@ footer {
 
   iframe {
     width: 100%;
+  }
+
+  /* ======================footer 900px====================== */
+
+  footer {
+    flex-direction: column;
   }
 }
