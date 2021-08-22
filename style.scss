@@ -494,96 +494,122 @@ template {
 /* ============================================ */
 /* ======================body====================== */
 body {
-  max-width: 1360px;
+  max-width: 100%;
   height: auto;
-  .hm_close {
-    width: 100%;
-    height: 100%;
-  }
+  margin: 0 auto;
+  position: relative;
+
+ 
 }
 
 /* ======================header====================== */
 header {
-  width: 1280px;
-  height: 100px;
+  width:100%;
   margin: 0 auto;
   background-color: #fff;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 4;
+  
 
-  #wrap {
-    .pfix {
-      width: 100%;
-      position: fixed;
-    }
-  }
-  /* nav_menu */
-
-  .nav_bg {
-    height: 100vh;
-    width: 100%;
-    background: #333;
-    opacity: 0;
-    -webkit-transition: 0.1s;
-    transition: 0.1s;
-    margin-top: -20px;
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-  }
-
-  #top_logo {
-    height: 40px;
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    z-index: 5;
-  }
-  .nav {
-    height: 300px;
-    width: 300px;
-    left: -30%;
-    top: 25px;
-    position: absolute;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    z-index: 1;
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        height: 30px;
-        line-height: 50px;
-        list-style-type: none;
-        font-size: 0.875rem;
-        text-align: center;
-
-        a {
-          display: block;
-          text-decoration: none;
-          color: #fff;
-        }
+  #wrap{
+    max-width: 1360px;
+    position: relative;
+    top: 0;
+    z-index: 7;
+    background-color: #fff;
+     margin: 0 auto;
+    height: 150px;
+      #top_logo {
+        height: 40px;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 5;
       }
-    }
-  }
+      #menu{
+        width: 100%;
+        height: 1px;
+        
+        .nav_bg {
+          background: #333;
+          opacity: 0;
+          -webkit-transition: 0.1s;
+          transition: 0.1s;
+          position: absolute;
+          width: 100vw;
+          height: 100vw;
+          top:0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 7;
+          margin-right: calc(50% - 50vw);
+          margin-left: calc(50% - 50vw);
+          pointer-events: none;
+         
+          
+        }
+        .nav {
+          height: 300px;
+          width: 300px;
+          left: -300px;
+          top: 25px;
+          margin-right: calc(50% - 50vw);
+          margin-left: calc(50% - 50vw);
+          position: absolute;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          z-index: 9;
+      
+          ul {
+            margin: 0;
+            padding: 0;
+      
+            li {
+              height: 30px;
+              line-height: 50px;
+              list-style-type: none;
+              font-size: 0.875rem;
+              text-align: center;
+      
+              a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .fadein_bg {
+          opacity: 0.8;
+          pointer-events: auto;
+         
+        }
+        .fadein {
+          -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+        }
+      
+      }
+      
+    
 
-  /* hamburger_line */
+       /* hamburger_line */
   #target {
     width: 30px;
     height: 30px;
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: 40px;
     cursor: pointer;
     display: block;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    z-index: 10 ;
 
     .target_inner {
       width: 30px;
@@ -609,18 +635,8 @@ header {
       top: 10px;
     }
   }
-
-  /* 動き */
-  .fadein {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
   }
-
-  .fadein_bg {
-    opacity: 0.8;
-    pointer-events: auto;
-  }
-
+  /* ハンバーガーメニューの動き */
   .linea {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -634,12 +650,14 @@ header {
     top: 10px !important;
     background: #ffffff !important;
   }
-}
+}  
+/* ======================menu====================== */
+
 /* ======================main====================== */
 main {
   ul {
-    width: 100%;
-    margin-top: 100px;
+    max-width: 1360px;
+    margin: 150px auto 0 auto;
     padding: 0 40px 0 40px;
     display: flex;
     justify-content: space-between;
@@ -680,8 +698,8 @@ main {
 
 /* ======================footer====================== */
 footer {
-  width: 100%;
-  margin-top: 100px;
+  max-width: 1360px;
+  margin: 100px auto 0 auto;
   padding: 0 40px 0 40px;
   display: flex;
   justify-content: space-between;
