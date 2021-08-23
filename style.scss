@@ -498,23 +498,39 @@ body {
   height: auto;
   margin: 0 auto;
   position: relative;
+<<<<<<< HEAD
+=======
+
+ 
+>>>>>>> origin/master
 }
 
 /* ======================header====================== */
 header {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width:100%;
+>>>>>>> origin/master
   margin: 0 auto;
   background-color: #fff;
   position: fixed;
   top: 0;
   z-index: 4;
+<<<<<<< HEAD
 
   #wrap {
+=======
+  
+
+  #wrap{
+>>>>>>> origin/master
     max-width: 1360px;
     position: relative;
     top: 0;
     z-index: 7;
     background-color: #fff;
+<<<<<<< HEAD
     margin: 0 auto;
     height: 130px;
     #top_logo {
@@ -577,8 +593,86 @@ header {
               color: #fff;
             }
           }
-        }
+=======
+     margin: 0 auto;
+    height: 150px;
+      #top_logo {
+        height: 40px;
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 5;
       }
+      #menu{
+        width: 100%;
+        height: 1px;
+        
+        .nav_bg {
+          background: #333;
+          opacity: 0;
+          -webkit-transition: 0.1s;
+          transition: 0.1s;
+          position: absolute;
+          width: 100vw;
+          height: 100vw;
+          top:0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 7;
+          margin-right: calc(50% - 50vw);
+          margin-left: calc(50% - 50vw);
+          pointer-events: none;
+         
+          
+        }
+        .nav {
+          height: 300px;
+          width: 300px;
+          left: -300px;
+          top: 25px;
+          margin-right: calc(50% - 50vw);
+          margin-left: calc(50% - 50vw);
+          position: absolute;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          z-index: 9;
+      
+          ul {
+            margin: 0;
+            padding: 0;
+      
+            li {
+              height: 30px;
+              line-height: 50px;
+              list-style-type: none;
+              font-size: 0.875rem;
+              text-align: center;
+      
+              a {
+                display: block;
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .fadein_bg {
+          opacity: 0.8;
+          pointer-events: auto;
+         
+        }
+        .fadein {
+          -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+>>>>>>> origin/master
+        }
+      
+      }
+<<<<<<< HEAD
       .fadein_bg {
         opacity: 0.8;
         pointer-events: auto;
@@ -588,6 +682,23 @@ header {
         transform: translateX(300px);
       }
     }
+=======
+      
+    
+
+       /* hamburger_line */
+  #target {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    cursor: pointer;
+    display: block;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10 ;
+>>>>>>> origin/master
 
     /* hamburger_line */
     #target {
@@ -602,6 +713,7 @@ header {
       transition: 0.5s;
       z-index: 10;
 
+<<<<<<< HEAD
       .target_inner {
         width: 30px;
         height: 30px;
@@ -626,6 +738,12 @@ header {
         top: 10px;
       }
     }
+=======
+    .target_inner_2 {
+      top: 10px;
+    }
+  }
+>>>>>>> origin/master
   }
   /* ハンバーガーメニューの動き */
   .linea {
@@ -641,7 +759,11 @@ header {
     top: 10px !important;
     background: #ffffff !important;
   }
+<<<<<<< HEAD
 }
+=======
+}  
+>>>>>>> origin/master
 /* ======================menu====================== */
 
 /* ======================main====================== */

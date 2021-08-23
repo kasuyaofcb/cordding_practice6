@@ -494,7 +494,11 @@ header #wrap {
   z-index: 7;
   background-color: #fff;
   margin: 0 auto;
+<<<<<<< HEAD
   height: 130px;
+=======
+  height: 150px;
+>>>>>>> origin/master
   /* hamburger_line */
 }
 
